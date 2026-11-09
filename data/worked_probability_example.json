@@ -1,0 +1,14 @@
+{
+  "condition": "Rohit and Gill both bat and each score <=20",
+  "n": 10000,
+  "n_B": 2045,
+  "n_AB": 491,
+  "p_B": 0.2045,
+  "p_AB": 0.0491,
+  "p_A_given_B": 0.24009779951100244,
+  "rahul_q": 0.11025,
+  "scenario_weights": {
+    "Early trouble": 0.377326741714038,
+    "Settled start": 0.622673258285962
+  }
+}

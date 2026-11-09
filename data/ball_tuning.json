@@ -1,0 +1,1446 @@
+{
+  "status": "RETROSPECTIVE COMPARISON COMPLETE",
+  "created_utc": "2026-11-09T16:23:25.458069+00:00",
+  "grid": [
+    {
+      "half_life": 2,
+      "prior_strength": 60
+    },
+    {
+      "half_life": 2,
+      "prior_strength": 240
+    },
+    {
+      "half_life": 4,
+      "prior_strength": 60
+    },
+    {
+      "half_life": 4,
+      "prior_strength": 240
+    }
+  ],
+  "development_n": 60,
+  "test_n": 91,
+  "development_keys": [
+    "1153840|New Zealand",
+    "1153841|New Zealand",
+    "1153842|New Zealand",
+    "1144998|India",
+    "1144999|India",
+    "1153692|New Zealand",
+    "1153694|India",
+    "1153695|India",
+    "1153695|New Zealand",
+    "1153846|New Zealand",
+    "1168242|India",
+    "1168244|India",
+    "1168245|India",
+    "1144485|New Zealand",
+    "1144490|India",
+    "1144496|India",
+    "1144507|New Zealand",
+    "1144515|New Zealand",
+    "1144516|India",
+    "1144520|India",
+    "1144522|India",
+    "1144526|India",
+    "1144528|India",
+    "1144530|New Zealand",
+    "1187021|India",
+    "1187023|India",
+    "1187027|India",
+    "1187029|India",
+    "1187682|India",
+    "1187683|India",
+    "1187683|New Zealand",
+    "1187684|New Zealand",
+    "1183537|New Zealand",
+    "1223957|India",
+    "1233976|New Zealand",
+    "1233978|New Zealand",
+    "1243394|India",
+    "1262755|India",
+    "1262756|India",
+    "1277083|India",
+    "1277084|India",
+    "1278677|India",
+    "1278678|India",
+    "1288988|New Zealand",
+    "1288989|New Zealand",
+    "1276907|India",
+    "1303310|New Zealand",
+    "1303311|New Zealand",
+    "1276909|India",
+    "1317901|India",
+    "1307479|New Zealand",
+    "1325549|India",
+    "1325550|India",
+    "1317479|New Zealand",
+    "1317480|New Zealand",
+    "1327509|India",
+    "1327510|India",
+    "1322278|India",
+    "1322278|New Zealand",
+    "1340847|India"
+  ],
+  "test_keys": [
+    "1339611|New Zealand",
+    "1348643|India",
+    "1339612|New Zealand",
+    "1348644|India",
+    "1348646|India",
+    "1348646|New Zealand",
+    "1348647|India",
+    "1348647|New Zealand",
+    "1348648|India",
+    "1348648|New Zealand",
+    "1348656|India",
+    "1348657|India",
+    "1348658|India",
+    "1322359|New Zealand",
+    "1339619|New Zealand",
+    "1339620|New Zealand",
+    "1339622|New Zealand",
+    "1339623|New Zealand",
+    "1381214|India",
+    "1381215|India",
+    "1381216|India",
+    "1336052|New Zealand",
+    "1336053|New Zealand",
+    "1388407|India",
+    "1388412|India",
+    "1388414|India",
+    "1389388|India",
+    "1395702|New Zealand",
+    "1389390|India",
+    "1384392|New Zealand",
+    "1384396|India",
+    "1384397|New Zealand",
+    "1384403|India",
+    "1384412|India",
+    "1384412|New Zealand",
+    "1384418|New Zealand",
+    "1384420|India",
+    "1384424|India",
+    "1384432|New Zealand",
+    "1384436|India",
+    "1384439|India",
+    "1387600|India",
+    "1387601|India",
+    "1388211|New Zealand",
+    "1387602|India",
+    "1442990|India",
+    "1442991|India",
+    "1442992|India",
+    "1443546|New Zealand",
+    "1443547|New Zealand",
+    "1439904|India",
+    "1439905|India",
+    "1442221|New Zealand",
+    "1439906|India",
+    "1442223|New Zealand",
+    "1466414|New Zealand",
+    "1466415|India",
+    "1466418|India",
+    "1466419|New Zealand",
+    "1466425|India",
+    "1466425|New Zealand",
+    "1466426|India",
+    "1466427|New Zealand",
+    "1466428|India",
+    "1466428|New Zealand",
+    "1443554|New Zealand",
+    "1478905|India",
+    "1478906|India",
+    "1491720|New Zealand",
+    "1491721|New Zealand",
+    "1491722|New Zealand",
+    "1491728|New Zealand",
+    "1491729|New Zealand",
+    "1491730|New Zealand",
+    "1479573|India",
+    "1479575|India",
+    "1490231|India",
+    "1490231|New Zealand",
+    "1490232|India",
+    "1490232|New Zealand",
+    "1490233|India",
+    "1490233|New Zealand",
+    "1528272|New Zealand",
+    "1528274|New Zealand",
+    "1538624|New Zealand",
+    "1538625|New Zealand",
+    "1496580|India",
+    "1496581|India",
+    "1538627|New Zealand",
+    "1538628|New Zealand",
+    "1529227|India"
+  ],
+  "excluded_cases": [
+    {
+      "key": "1153693|India",
+      "date": "2019-01-28",
+      "reasons": [
+        "opponent:miscounted_overs"
+      ]
+    },
+    {
+      "key": "1153693|New Zealand",
+      "date": "2019-01-28",
+      "reasons": [
+        "target:miscounted_overs"
+      ]
+    },
+    {
+      "key": "1153844|New Zealand",
+      "date": "2019-02-13",
+      "reasons": [
+        "opponent:delivery_penalty"
+      ]
+    },
+    {
+      "key": "1223955|India",
+      "date": "2020-11-27",
+      "reasons": [
+        "target:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1233977|New Zealand",
+      "date": "2021-03-23",
+      "reasons": [
+        "target:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1325551|India",
+      "date": "2022-08-22",
+      "reasons": [
+        "opponent:delivery_replacement",
+        "opponent:miscounted_overs"
+      ]
+    },
+    {
+      "key": "1340846|India",
+      "date": "2022-12-07",
+      "reasons": [
+        "target:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1339613|New Zealand",
+      "date": "2023-01-13",
+      "reasons": [
+        "target:delivery_replacement",
+        "target:non11_roster:Pakistan",
+        "opponent:non11_roster:Pakistan",
+        "opponent:not11players"
+      ]
+    },
+    {
+      "key": "1348645|India",
+      "date": "2023-01-15",
+      "reasons": [
+        "target:non11_roster:Sri Lanka",
+        "opponent:absent_hurt",
+        "opponent:delivery_replacement",
+        "opponent:non11_roster:Sri Lanka",
+        "opponent:not11players"
+      ]
+    },
+    {
+      "key": "1322361|New Zealand",
+      "date": "2023-03-31",
+      "reasons": [
+        "target:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1339621|New Zealand",
+      "date": "2023-05-03",
+      "reasons": [
+        "target:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1388406|India",
+      "date": "2023-09-10",
+      "reasons": [
+        "target:delivery_replacement",
+        "opponent:absent_hurt"
+      ]
+    },
+    {
+      "key": "1336054|New Zealand",
+      "date": "2023-09-13",
+      "reasons": [
+        "target:delivery_penalty"
+      ]
+    },
+    {
+      "key": "1336055|New Zealand",
+      "date": "2023-09-15",
+      "reasons": [
+        "target:absent_hurt"
+      ]
+    },
+    {
+      "key": "1395701|New Zealand",
+      "date": "2023-09-23",
+      "reasons": [
+        "target:miscounted_overs"
+      ]
+    },
+    {
+      "key": "1384402|New Zealand",
+      "date": "2023-10-13",
+      "reasons": [
+        "target:unsupported_wicket:retired hurt"
+      ]
+    },
+    {
+      "key": "1384408|India",
+      "date": "2023-10-19",
+      "reasons": [
+        "opponent:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1384423|New Zealand",
+      "date": "2023-11-01",
+      "reasons": [
+        "opponent:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1384428|India",
+      "date": "2023-11-05",
+      "reasons": [
+        "target:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1384437|India",
+      "date": "2023-11-15",
+      "reasons": [
+        "target:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1384437|New Zealand",
+      "date": "2023-11-15",
+      "reasons": [
+        "opponent:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1388212|New Zealand",
+      "date": "2023-12-23",
+      "reasons": [
+        "opponent:unsupported_wicket:retired hurt"
+      ]
+    },
+    {
+      "key": "1443548|New Zealand",
+      "date": "2025-01-11",
+      "reasons": [
+        "opponent:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1442220|New Zealand",
+      "date": "2025-02-08",
+      "reasons": [
+        "target:delivery_replacement",
+        "opponent:absent_hurt"
+      ]
+    },
+    {
+      "key": "1443555|New Zealand",
+      "date": "2025-04-02",
+      "reasons": [
+        "target:non11_roster:Pakistan",
+        "opponent:delivery_replacement",
+        "opponent:more_than11_batters",
+        "opponent:non11_roster:Pakistan",
+        "opponent:unsupported_wicket:retired hurt",
+        "opponent:not11players"
+      ]
+    },
+    {
+      "key": "1443556|New Zealand",
+      "date": "2025-04-05",
+      "reasons": [
+        "target:non11_roster:Pakistan",
+        "opponent:delivery_replacement",
+        "opponent:more_than11_batters",
+        "opponent:non11_roster:Pakistan",
+        "opponent:unsupported_wicket:retired hurt",
+        "opponent:not11players"
+      ]
+    },
+    {
+      "key": "1479574|India",
+      "date": "2025-12-03",
+      "reasons": [
+        "target:delivery_replacement",
+        "opponent:unsupported_wicket:retired hurt"
+      ]
+    },
+    {
+      "key": "1528273|New Zealand",
+      "date": "2026-04-20",
+      "reasons": [
+        "opponent:unsupported_wicket:retired hurt"
+      ]
+    },
+    {
+      "key": "1496579|India",
+      "date": "2026-07-14",
+      "reasons": [
+        "target:unsupported_wicket:retired hurt"
+      ]
+    },
+    {
+      "key": "1538626|New Zealand",
+      "date": "2026-07-16",
+      "reasons": [
+        "opponent:unsupported_wicket:retired hurt"
+      ]
+    },
+    {
+      "key": "1529228|India",
+      "date": "2026-09-30",
+      "reasons": [
+        "opponent:delivery_replacement"
+      ]
+    },
+    {
+      "key": "1529229|India",
+      "date": "2026-10-03",
+      "reasons": [
+        "opponent:delivery_replacement"
+      ]
+    }
+  ],
+  "development_sims": 1500,
+  "test_sims": 3000,
+  "seed": 7,
+  "primary": "Mean fractional-outcome multiclass Brier, lower better",
+  "temporal_rule": "Strict earlier calendar dates; expected order from last5 prior appearances; recorded rosters/innings order assumed known post-toss",
+  "target_rule": "Simulated first innings supplies chase target; actual first score/duration never input",
+  "cohort": "Same supported paired cases for v2/v3; exclusions use unsupported outcomes and narrow retrospective population, not knowable pre-match",
+  "no_untouched_claim": "All retrospective/exploratory; previous final-period results informed model development",
+  "engine_sha256": "7449afb7bd0fd537721c7ac1cbdfafb6670bd43ddb26dd68265d9af160d5dcd6",
+  "data_sha256": "5505dd76a733a80b0cbe8ca9d7d68137f9df88d4b33f3a6da7b0f6b9bd5f91ea",
+  "selected_config": {
+    "half_life": 2,
+    "prior_strength": 240
+  },
+  "grid_results": [
+    {
+      "config": {
+        "half_life": 2,
+        "prior_strength": 60
+      },
+      "mean_brier": 0.87345857654321,
+      "cases": [
+        {
+          "key": "1153840|New Zealand",
+          "brier": 0.7078482222222221
+        },
+        {
+          "key": "1153841|New Zealand",
+          "brier": 0.7502050370370371
+        },
+        {
+          "key": "1153842|New Zealand",
+          "brier": 0.6673577777777778
+        },
+        {
+          "key": "1144998|India",
+          "brier": 0.635452
+        },
+        {
+          "key": "1144999|India",
+          "brier": 1.1861511111111114
+        },
+        {
+          "key": "1153692|New Zealand",
+          "brier": 1.1661502222222222
+        },
+        {
+          "key": "1153694|India",
+          "brier": 1.1955108888888888
+        },
+        {
+          "key": "1153695|India",
+          "brier": 0.8439410370370373
+        },
+        {
+          "key": "1153695|New Zealand",
+          "brier": 1.063591555555556
+        },
+        {
+          "key": "1153846|New Zealand",
+          "brier": 0.8347375555555556
+        },
+        {
+          "key": "1168242|India",
+          "brier": 1.129864
+        },
+        {
+          "key": "1168244|India",
+          "brier": 0.5934777777777778
+        },
+        {
+          "key": "1168245|India",
+          "brier": 0.8932495555555556
+        },
+        {
+          "key": "1144485|New Zealand",
+          "brier": 0.6698502222222222
+        },
+        {
+          "key": "1144490|India",
+          "brier": 0.5904311111111111
+        },
+        {
+          "key": "1144496|India",
+          "brier": 0.8600684444444446
+        },
+        {
+          "key": "1144507|New Zealand",
+          "brier": 0.8915737037037038
+        },
+        {
+          "key": "1144515|New Zealand",
+          "brier": 0.99545
+        },
+        {
+          "key": "1144516|India",
+          "brier": 0.515584
+        },
+        {
+          "key": "1144520|India",
+          "brier": 0.6202168888888889
+        },
+        {
+          "key": "1144522|India",
+          "brier": 0.7164482222222222
+        },
+        {
+          "key": "1144526|India",
+          "brier": 0.9352342222222223
+        },
+        {
+          "key": "1144528|India",
+          "brier": 1.2224400000000002
+        },
+        {
+          "key": "1144530|New Zealand",
+          "brier": 0.858737111111111
+        },
+        {
+          "key": "1187021|India",
+          "brier": 0.8996857777777778
+        },
+        {
+          "key": "1187023|India",
+          "brier": 0.6855088888888888
+        },
+        {
+          "key": "1187027|India",
+          "brier": 0.7655617777777778
+        },
+        {
+          "key": "1187029|India",
+          "brier": 0.584077111111111
+        },
+        {
+          "key": "1187682|India",
+          "brier": 0.9031866666666667
+        },
+        {
+          "key": "1187683|India",
+          "brier": 1.0354464444444444
+        },
+        {
+          "key": "1187683|New Zealand",
+          "brier": 0.8420171111111111
+        },
+        {
+          "key": "1187684|New Zealand",
+          "brier": 0.8115804444444443
+        },
+        {
+          "key": "1183537|New Zealand",
+          "brier": 0.7901413333333331
+        },
+        {
+          "key": "1223957|India",
+          "brier": 1.1491513333333332
+        },
+        {
+          "key": "1233976|New Zealand",
+          "brier": 0.8682117777777779
+        },
+        {
+          "key": "1233978|New Zealand",
+          "brier": 0.8394528888888889
+        },
+        {
+          "key": "1243394|India",
+          "brier": 0.9088371111111111
+        },
+        {
+          "key": "1262755|India",
+          "brier": 0.7720522962962962
+        },
+        {
+          "key": "1262756|India",
+          "brier": 1.1689389629629627
+        },
+        {
+          "key": "1277083|India",
+          "brier": 0.8256824444444444
+        },
+        {
+          "key": "1277084|India",
+          "brier": 0.5058024444444443
+        },
+        {
+          "key": "1278677|India",
+          "brier": 1.0650826666666668
+        },
+        {
+          "key": "1278678|India",
+          "brier": 1.0762555555555553
+        },
+        {
+          "key": "1288988|New Zealand",
+          "brier": 0.9642551111111111
+        },
+        {
+          "key": "1288989|New Zealand",
+          "brier": 0.9835595555555555
+        },
+        {
+          "key": "1276907|India",
+          "brier": 0.5410402222222221
+        },
+        {
+          "key": "1303310|New Zealand",
+          "brier": 0.9693400000000001
+        },
+        {
+          "key": "1303311|New Zealand",
+          "brier": 0.7121495555555556
+        },
+        {
+          "key": "1276909|India",
+          "brier": 1.1473454814814814
+        },
+        {
+          "key": "1317901|India",
+          "brier": 1.1605386666666666
+        },
+        {
+          "key": "1307479|New Zealand",
+          "brier": 0.7472188888888888
+        },
+        {
+          "key": "1325549|India",
+          "brier": 0.908398962962963
+        },
+        {
+          "key": "1325550|India",
+          "brier": 0.9758771111111111
+        },
+        {
+          "key": "1317479|New Zealand",
+          "brier": 0.6741128888888889
+        },
+        {
+          "key": "1317480|New Zealand",
+          "brier": 1.0115560000000001
+        },
+        {
+          "key": "1327509|India",
+          "brier": 0.8422744444444443
+        },
+        {
+          "key": "1327510|India",
+          "brier": 1.0295099999999997
+        },
+        {
+          "key": "1322278|India",
+          "brier": 0.9690675555555556
+        },
+        {
+          "key": "1322278|New Zealand",
+          "brier": 0.7943942222222223
+        },
+        {
+          "key": "1340847|India",
+          "brier": 0.9366322222222222
+        }
+      ],
+      "runtime_seconds": 17.89553451538086
+    },
+    {
+      "config": {
+        "half_life": 2,
+        "prior_strength": 240
+      },
+      "mean_brier": 0.8657321901234566,
+      "cases": [
+        {
+          "key": "1153840|New Zealand",
+          "brier": 0.7943626666666666
+        },
+        {
+          "key": "1153841|New Zealand",
+          "brier": 0.7941791111111112
+        },
+        {
+          "key": "1153842|New Zealand",
+          "brier": 0.7631817777777778
+        },
+        {
+          "key": "1144998|India",
+          "brier": 0.6065897777777778
+        },
+        {
+          "key": "1144999|India",
+          "brier": 1.1205913333333335
+        },
+        {
+          "key": "1153692|New Zealand",
+          "brier": 1.1383735555555554
+        },
+        {
+          "key": "1153694|India",
+          "brier": 1.17502
+        },
+        {
+          "key": "1153695|India",
+          "brier": 0.8671317777777776
+        },
+        {
+          "key": "1153695|New Zealand",
+          "brier": 0.9962508888888889
+        },
+        {
+          "key": "1153846|New Zealand",
+          "brier": 0.7833576296296296
+        },
+        {
+          "key": "1168242|India",
+          "brier": 1.102050888888889
+        },
+        {
+          "key": "1168244|India",
+          "brier": 0.6461857777777777
+        },
+        {
+          "key": "1168245|India",
+          "brier": 0.8856793333333335
+        },
+        {
+          "key": "1144485|New Zealand",
+          "brier": 0.7511521481481483
+        },
+        {
+          "key": "1144490|India",
+          "brier": 0.658782
+        },
+        {
+          "key": "1144496|India",
+          "brier": 0.863358
+        },
+        {
+          "key": "1144507|New Zealand",
+          "brier": 0.8839368888888888
+        },
+        {
+          "key": "1144515|New Zealand",
+          "brier": 1.0126362222222223
+        },
+        {
+          "key": "1144516|India",
+          "brier": 0.5680937777777778
+        },
+        {
+          "key": "1144520|India",
+          "brier": 0.6411159999999999
+        },
+        {
+          "key": "1144522|India",
+          "brier": 0.7435566666666665
+        },
+        {
+          "key": "1144526|India",
+          "brier": 0.863618
+        },
+        {
+          "key": "1144528|India",
+          "brier": 1.1980251111111109
+        },
+        {
+          "key": "1144530|New Zealand",
+          "brier": 0.8184268888888889
+        },
+        {
+          "key": "1187021|India",
+          "brier": 0.9608917777777777
+        },
+        {
+          "key": "1187023|India",
+          "brier": 0.6954464444444445
+        },
+        {
+          "key": "1187027|India",
+          "brier": 0.7234490617283951
+        },
+        {
+          "key": "1187029|India",
+          "brier": 0.5541020000000002
+        },
+        {
+          "key": "1187682|India",
+          "brier": 0.9042510370370371
+        },
+        {
+          "key": "1187683|India",
+          "brier": 1.0993321728395065
+        },
+        {
+          "key": "1187683|New Zealand",
+          "brier": 0.8115627407407406
+        },
+        {
+          "key": "1187684|New Zealand",
+          "brier": 0.8014631111111111
+        },
+        {
+          "key": "1183537|New Zealand",
+          "brier": 0.7783735555555554
+        },
+        {
+          "key": "1223957|India",
+          "brier": 1.0912304444444443
+        },
+        {
+          "key": "1233976|New Zealand",
+          "brier": 0.8406853333333333
+        },
+        {
+          "key": "1233978|New Zealand",
+          "brier": 0.8241557777777776
+        },
+        {
+          "key": "1243394|India",
+          "brier": 0.949444
+        },
+        {
+          "key": "1262755|India",
+          "brier": 0.7554713333333332
+        },
+        {
+          "key": "1262756|India",
+          "brier": 1.14502824691358
+        },
+        {
+          "key": "1277083|India",
+          "brier": 0.8445424444444445
+        },
+        {
+          "key": "1277084|India",
+          "brier": 0.5803748888888889
+        },
+        {
+          "key": "1278677|India",
+          "brier": 0.9966866666666668
+        },
+        {
+          "key": "1278678|India",
+          "brier": 1.0183060000000002
+        },
+        {
+          "key": "1288988|New Zealand",
+          "brier": 0.8930831111111113
+        },
+        {
+          "key": "1288989|New Zealand",
+          "brier": 0.9175951111111114
+        },
+        {
+          "key": "1276907|India",
+          "brier": 0.5930002222222224
+        },
+        {
+          "key": "1303310|New Zealand",
+          "brier": 0.8150134814814816
+        },
+        {
+          "key": "1303311|New Zealand",
+          "brier": 0.727436
+        },
+        {
+          "key": "1276909|India",
+          "brier": 1.079706888888889
+        },
+        {
+          "key": "1317901|India",
+          "brier": 1.1396831111111112
+        },
+        {
+          "key": "1307479|New Zealand",
+          "brier": 0.7720637777777779
+        },
+        {
+          "key": "1325549|India",
+          "brier": 0.8353868888888889
+        },
+        {
+          "key": "1325550|India",
+          "brier": 0.9573554814814814
+        },
+        {
+          "key": "1317479|New Zealand",
+          "brier": 0.7617353333333333
+        },
+        {
+          "key": "1317480|New Zealand",
+          "brier": 0.9006273333333333
+        },
+        {
+          "key": "1327509|India",
+          "brier": 0.9060022962962963
+        },
+        {
+          "key": "1327510|India",
+          "brier": 0.9780342222222225
+        },
+        {
+          "key": "1322278|India",
+          "brier": 0.8964586666666667
+        },
+        {
+          "key": "1322278|New Zealand",
+          "brier": 0.8224606666666668
+        },
+        {
+          "key": "1340847|India",
+          "brier": 0.8978355555555557
+        }
+      ],
+      "runtime_seconds": 17.81755495071411
+    },
+    {
+      "config": {
+        "half_life": 4,
+        "prior_strength": 60
+      },
+      "mean_brier": 0.8762901691358024,
+      "cases": [
+        {
+          "key": "1153840|New Zealand",
+          "brier": 0.7220188148148148
+        },
+        {
+          "key": "1153841|New Zealand",
+          "brier": 0.7654237777777778
+        },
+        {
+          "key": "1153842|New Zealand",
+          "brier": 0.6924980000000001
+        },
+        {
+          "key": "1144998|India",
+          "brier": 0.6006573333333334
+        },
+        {
+          "key": "1144999|India",
+          "brier": 1.183939111111111
+        },
+        {
+          "key": "1153692|New Zealand",
+          "brier": 1.177948
+        },
+        {
+          "key": "1153694|India",
+          "brier": 1.1971582222222223
+        },
+        {
+          "key": "1153695|India",
+          "brier": 0.8430808888888888
+        },
+        {
+          "key": "1153695|New Zealand",
+          "brier": 1.0130977777777777
+        },
+        {
+          "key": "1153846|New Zealand",
+          "brier": 0.8359533333333332
+        },
+        {
+          "key": "1168242|India",
+          "brier": 1.1575922222222224
+        },
+        {
+          "key": "1168244|India",
+          "brier": 0.6218939999999998
+        },
+        {
+          "key": "1168245|India",
+          "brier": 0.9639411111111111
+        },
+        {
+          "key": "1144485|New Zealand",
+          "brier": 0.6484164444444444
+        },
+        {
+          "key": "1144490|India",
+          "brier": 0.6250813333333335
+        },
+        {
+          "key": "1144496|India",
+          "brier": 0.9045933333333332
+        },
+        {
+          "key": "1144507|New Zealand",
+          "brier": 0.918702222222222
+        },
+        {
+          "key": "1144515|New Zealand",
+          "brier": 1.027961111111111
+        },
+        {
+          "key": "1144516|India",
+          "brier": 0.5159582222222224
+        },
+        {
+          "key": "1144520|India",
+          "brier": 0.6682113333333333
+        },
+        {
+          "key": "1144522|India",
+          "brier": 0.6948448888888888
+        },
+        {
+          "key": "1144526|India",
+          "brier": 0.9075448888888888
+        },
+        {
+          "key": "1144528|India",
+          "brier": 1.2246926666666667
+        },
+        {
+          "key": "1144530|New Zealand",
+          "brier": 0.8113279999999999
+        },
+        {
+          "key": "1187021|India",
+          "brier": 0.9038933333333332
+        },
+        {
+          "key": "1187023|India",
+          "brier": 0.6917171111111111
+        },
+        {
+          "key": "1187027|India",
+          "brier": 0.7250868888888888
+        },
+        {
+          "key": "1187029|India",
+          "brier": 0.5905242222222222
+        },
+        {
+          "key": "1187682|India",
+          "brier": 0.9288828888888889
+        },
+        {
+          "key": "1187683|India",
+          "brier": 1.042043037037037
+        },
+        {
+          "key": "1187683|New Zealand",
+          "brier": 0.8256237777777777
+        },
+        {
+          "key": "1187684|New Zealand",
+          "brier": 0.8094415555555555
+        },
+        {
+          "key": "1183537|New Zealand",
+          "brier": 0.7773436296296297
+        },
+        {
+          "key": "1223957|India",
+          "brier": 1.1442664444444444
+        },
+        {
+          "key": "1233976|New Zealand",
+          "brier": 0.9141571111111112
+        },
+        {
+          "key": "1233978|New Zealand",
+          "brier": 0.8328084444444444
+        },
+        {
+          "key": "1243394|India",
+          "brier": 0.9274104444444444
+        },
+        {
+          "key": "1262755|India",
+          "brier": 0.7636387407407407
+        },
+        {
+          "key": "1262756|India",
+          "brier": 1.1543275555555557
+        },
+        {
+          "key": "1277083|India",
+          "brier": 0.8478035555555555
+        },
+        {
+          "key": "1277084|India",
+          "brier": 0.5111193333333334
+        },
+        {
+          "key": "1278677|India",
+          "brier": 1.091663111111111
+        },
+        {
+          "key": "1278678|India",
+          "brier": 1.108456888888889
+        },
+        {
+          "key": "1288988|New Zealand",
+          "brier": 0.9598884444444443
+        },
+        {
+          "key": "1288989|New Zealand",
+          "brier": 1.0177255555555558
+        },
+        {
+          "key": "1276907|India",
+          "brier": 0.556814888888889
+        },
+        {
+          "key": "1303310|New Zealand",
+          "brier": 0.9751208888888889
+        },
+        {
+          "key": "1303311|New Zealand",
+          "brier": 0.6936702222222221
+        },
+        {
+          "key": "1276909|India",
+          "brier": 1.151045925925926
+        },
+        {
+          "key": "1317901|India",
+          "brier": 1.1369259999999999
+        },
+        {
+          "key": "1307479|New Zealand",
+          "brier": 0.7637775555555555
+        },
+        {
+          "key": "1325549|India",
+          "brier": 0.8912239999999999
+        },
+        {
+          "key": "1325550|India",
+          "brier": 0.9869915555555554
+        },
+        {
+          "key": "1317479|New Zealand",
+          "brier": 0.6327946666666667
+        },
+        {
+          "key": "1317480|New Zealand",
+          "brier": 0.9734628888888888
+        },
+        {
+          "key": "1327509|India",
+          "brier": 0.8275771111111111
+        },
+        {
+          "key": "1327510|India",
+          "brier": 1.012123111111111
+        },
+        {
+          "key": "1322278|India",
+          "brier": 0.9375231111111113
+        },
+        {
+          "key": "1322278|New Zealand",
+          "brier": 0.8066575555555557
+        },
+        {
+          "key": "1340847|India",
+          "brier": 0.9413415555555555
+        }
+      ],
+      "runtime_seconds": 17.97570514678955
+    },
+    {
+      "config": {
+        "half_life": 4,
+        "prior_strength": 240
+      },
+      "mean_brier": 0.8659653421810699,
+      "cases": [
+        {
+          "key": "1153840|New Zealand",
+          "brier": 0.710662
+        },
+        {
+          "key": "1153841|New Zealand",
+          "brier": 0.7727233333333333
+        },
+        {
+          "key": "1153842|New Zealand",
+          "brier": 0.7141218024691358
+        },
+        {
+          "key": "1144998|India",
+          "brier": 0.6164975555555555
+        },
+        {
+          "key": "1144999|India",
+          "brier": 1.092604222222222
+        },
+        {
+          "key": "1153692|New Zealand",
+          "brier": 1.1485011111111112
+        },
+        {
+          "key": "1153694|India",
+          "brier": 1.180855111111111
+        },
+        {
+          "key": "1153695|India",
+          "brier": 0.9086500740740738
+        },
+        {
+          "key": "1153695|New Zealand",
+          "brier": 1.0217786666666666
+        },
+        {
+          "key": "1153846|New Zealand",
+          "brier": 0.8108217777777779
+        },
+        {
+          "key": "1168242|India",
+          "brier": 1.113338
+        },
+        {
+          "key": "1168244|India",
+          "brier": 0.6148495555555554
+        },
+        {
+          "key": "1168245|India",
+          "brier": 0.8466293333333332
+        },
+        {
+          "key": "1144485|New Zealand",
+          "brier": 0.727395925925926
+        },
+        {
+          "key": "1144490|India",
+          "brier": 0.6497571111111111
+        },
+        {
+          "key": "1144496|India",
+          "brier": 0.8540546666666665
+        },
+        {
+          "key": "1144507|New Zealand",
+          "brier": 0.8578673333333334
+        },
+        {
+          "key": "1144515|New Zealand",
+          "brier": 1.014120962962963
+        },
+        {
+          "key": "1144516|India",
+          "brier": 0.5891268888888889
+        },
+        {
+          "key": "1144520|India",
+          "brier": 0.6316706666666667
+        },
+        {
+          "key": "1144522|India",
+          "brier": 0.7059962222222222
+        },
+        {
+          "key": "1144526|India",
+          "brier": 0.9020826666666666
+        },
+        {
+          "key": "1144528|India",
+          "brier": 1.2004393333333334
+        },
+        {
+          "key": "1144530|New Zealand",
+          "brier": 0.7954488888888889
+        },
+        {
+          "key": "1187021|India",
+          "brier": 0.9760968888888889
+        },
+        {
+          "key": "1187023|India",
+          "brier": 0.6607188148148148
+        },
+        {
+          "key": "1187027|India",
+          "brier": 0.7362591111111111
+        },
+        {
+          "key": "1187029|India",
+          "brier": 0.5892477777777777
+        },
+        {
+          "key": "1187682|India",
+          "brier": 0.9293383333333332
+        },
+        {
+          "key": "1187683|India",
+          "brier": 1.081112222222222
+        },
+        {
+          "key": "1187683|New Zealand",
+          "brier": 0.809023111111111
+        },
+        {
+          "key": "1187684|New Zealand",
+          "brier": 0.8498024444444443
+        },
+        {
+          "key": "1183537|New Zealand",
+          "brier": 0.776499111111111
+        },
+        {
+          "key": "1223957|India",
+          "brier": 1.113483111111111
+        },
+        {
+          "key": "1233976|New Zealand",
+          "brier": 0.9024547407407407
+        },
+        {
+          "key": "1233978|New Zealand",
+          "brier": 0.8480948888888888
+        },
+        {
+          "key": "1243394|India",
+          "brier": 0.9653442222222223
+        },
+        {
+          "key": "1262755|India",
+          "brier": 0.7495571111111111
+        },
+        {
+          "key": "1262756|India",
+          "brier": 1.1478344444444446
+        },
+        {
+          "key": "1277083|India",
+          "brier": 0.8544420740740741
+        },
+        {
+          "key": "1277084|India",
+          "brier": 0.5382604444444443
+        },
+        {
+          "key": "1278677|India",
+          "brier": 1.039824
+        },
+        {
+          "key": "1278678|India",
+          "brier": 1.0258974074074072
+        },
+        {
+          "key": "1288988|New Zealand",
+          "brier": 0.9287331111111111
+        },
+        {
+          "key": "1288989|New Zealand",
+          "brier": 0.9410986666666666
+        },
+        {
+          "key": "1276907|India",
+          "brier": 0.5810442222222223
+        },
+        {
+          "key": "1303310|New Zealand",
+          "brier": 0.8380223209876542
+        },
+        {
+          "key": "1303311|New Zealand",
+          "brier": 0.7100054814814815
+        },
+        {
+          "key": "1276909|India",
+          "brier": 1.1009022222222224
+        },
+        {
+          "key": "1317901|India",
+          "brier": 1.142798888888889
+        },
+        {
+          "key": "1307479|New Zealand",
+          "brier": 0.7865865185185186
+        },
+        {
+          "key": "1325549|India",
+          "brier": 0.7842879259259259
+        },
+        {
+          "key": "1325550|India",
+          "brier": 1.005237111111111
+        },
+        {
+          "key": "1317479|New Zealand",
+          "brier": 0.7157134814814816
+        },
+        {
+          "key": "1317480|New Zealand",
+          "brier": 0.8641284444444444
+        },
+        {
+          "key": "1327509|India",
+          "brier": 0.9189553333333333
+        },
+        {
+          "key": "1327510|India",
+          "brier": 0.9608782222222224
+        },
+        {
+          "key": "1322278|India",
+          "brier": 0.9159215555555555
+        },
+        {
+          "key": "1322278|New Zealand",
+          "brier": 0.8053991111111112
+        },
+        {
+          "key": "1340847|India",
+          "brier": 0.8849244444444445
+        }
+      ],
+      "runtime_seconds": 17.867106199264526
+    }
+  ],
+  "selected_utc": "2026-11-09T16:24:37.405906+00:00",
+  "evaluation_resume_note": "Original final comparison reached provenance assertion with equal wall-clock timestamps from Windows15.625ms clock resolution; no final metrics were saved/inspected. Preserve earlier selection and rerun unchanged test only. Timestamp ordering now permits equal wall ticks and records monotonic ordering.",
+  "test_resume_utc": "2026-11-09T16:29:00.352073+00:00",
+  "completed_utc": "2026-11-09T16:31:22.080283+00:00"
+}

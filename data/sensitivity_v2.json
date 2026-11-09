@@ -1,0 +1,73 @@
+{
+  "status": "Sensitivity only; these future-scenario outputs do not select settings or establish an edge",
+  "event": "Rahul50+ given Rohit and Gill both bat and each score <=20",
+  "n_simulations_per_setting": 50000,
+  "fixed_seed": 7,
+  "rows": [
+    {
+      "half_life_years": 2,
+      "kappa": 5,
+      "conditional_P_Rahul50_given_openers_le20": 0.2808705612829324,
+      "condition_n": 8730,
+      "joint_n": 2452,
+      "monte_carlo_se": 0.004810049249086936,
+      "Rahul_top_share": 0.11596333333333332,
+      "early_trouble_weight": 0.37183898635092244
+    },
+    {
+      "half_life_years": 2,
+      "kappa": 20,
+      "conditional_P_Rahul50_given_openers_le20": 0.22688715619912603,
+      "condition_n": 11671,
+      "joint_n": 2648,
+      "monte_carlo_se": 0.003876790793809568,
+      "Rahul_top_share": 0.11586166666666664,
+      "early_trouble_weight": 0.4145943818184241
+    },
+    {
+      "half_life_years": 4,
+      "kappa": 5,
+      "conditional_P_Rahul50_given_openers_le20": 0.302040320621812,
+      "condition_n": 8234,
+      "joint_n": 2487,
+      "monte_carlo_se": 0.005059903068246866,
+      "Rahul_top_share": 0.11169499999999999,
+      "early_trouble_weight": 0.34607040670054606
+    },
+    {
+      "half_life_years": 4,
+      "kappa": 20,
+      "conditional_P_Rahul50_given_openers_le20": 0.24068382635420668,
+      "condition_n": 10412,
+      "joint_n": 2506,
+      "monte_carlo_se": 0.004189553099716748,
+      "Rahul_top_share": 0.11100999999999998,
+      "early_trouble_weight": 0.377326741714038
+    },
+    {
+      "half_life_years": "infinity",
+      "kappa": 5,
+      "conditional_P_Rahul50_given_openers_le20": 0.3319223107569721,
+      "condition_n": 8032,
+      "joint_n": 2666,
+      "monte_carlo_se": 0.0052543603878113,
+      "Rahul_top_share": 0.107805,
+      "early_trouble_weight": 0.31958233870575337
+    },
+    {
+      "half_life_years": "infinity",
+      "kappa": 20,
+      "conditional_P_Rahul50_given_openers_le20": 0.2887706342311034,
+      "condition_n": 9208,
+      "joint_n": 2659,
+      "monte_carlo_se": 0.004722790684566146,
+      "Rahul_top_share": 0.10458333333333332,
+      "early_trouble_weight": 0.3332829319712451
+    }
+  ],
+  "caveats": [
+    "Spread across settings is not a credible interval and does not cover all model uncertainty",
+    "Residual score independence, weather and lineup uncertainty remain",
+    "Settings must be selected from earlier development matches, never from this price/scenario"
+  ]
+}

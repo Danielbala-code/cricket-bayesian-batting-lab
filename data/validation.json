@@ -1,0 +1,2376 @@
+{
+  "status": "Retrospective diagnostic; not untouched holdout or evidence of betting edge",
+  "fixed_before_this_run": {
+    "half_life_years": 4,
+    "kappa": 20,
+    "n_sims": 1500,
+    "seed": 7,
+    "max_targets": 40
+  },
+  "n": 40,
+  "min_date": "2025-03-02",
+  "max_date": "2026-10-03",
+  "metric": "Multiclass Brier: sum over11 players of (fractional-top-share probability minus fractional observed tie share)^2; lower better",
+  "mean_brier": {
+    "model": 0.8289087141975309,
+    "uniform": 0.9090909090909088,
+    "historical_top_share": 0.8753724258364294,
+    "venue_blind": 0.831829436419753
+  },
+  "limitations": [
+    "Current match recorded XI is assumed known; order reconstructed from prior median observed position, never current actual position",
+    "Targets are the last40 eligible India/NZ team innings since2023; selection and prior full-history exploratory analysis preclude untouched-holdout claims",
+    "Fixed4year half-life andkappa20; no tuning. No series-aware uncertainty or probability calibration claimed",
+    "No-results and D/L excluded. Actual match odds, weather, lineups before toss and settlement policies not modeled"
+  ],
+  "details": [
+    {
+      "id": "1466425",
+      "date": "2025-03-02",
+      "team": "India",
+      "venue": "Dubai International Cricket Stadium",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "V Kohli",
+        "SS Iyer",
+        "KL Rahul",
+        "HH Pandya",
+        "AR Patel",
+        "RA Jadeja",
+        "Kuldeep Yadav",
+        "Mohammed Shami",
+        "CV Varun"
+      ],
+      "winners": [
+        "SS Iyer"
+      ],
+      "training_max_date": "2025-03-01",
+      "brier": {
+        "model": 0.9461573333333333,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.1228559176672384,
+        "venue_blind": 0.9432604444444445
+      },
+      "model_q": [
+        0.23188888888888892,
+        0.175,
+        0.23255555555555557,
+        0.112,
+        0.10766666666666666,
+        0.07,
+        0.04988888888888889,
+        0.010333333333333333,
+        0.0033333333333333335,
+        0.0016666666666666668,
+        0.005666666666666667
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1466425",
+      "date": "2025-03-02",
+      "team": "New Zealand",
+      "venue": "Dubai International Cricket Stadium",
+      "lineup": [
+        "WA Young",
+        "KS Williamson",
+        "R Ravindra",
+        "DJ Mitchell",
+        "TWM Latham",
+        "GD Phillips",
+        "MG Bracewell",
+        "MJ Santner",
+        "MJ Henry",
+        "KA Jamieson",
+        "W O'Rourke"
+      ],
+      "winners": [
+        "KS Williamson"
+      ],
+      "training_max_date": "2025-03-01",
+      "brier": {
+        "model": 0.7856035555555555,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.6958080808080809,
+        "venue_blind": 0.7962819999999999
+      },
+      "model_q": [
+        0.1868888888888889,
+        0.1808888888888889,
+        0.1641111111111111,
+        0.15444444444444447,
+        0.107,
+        0.09344444444444444,
+        0.0928888888888889,
+        0.009333333333333334,
+        0.004666666666666667,
+        0.001,
+        0.005333333333333333
+      ],
+      "observed_shares": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1466426",
+      "date": "2025-03-04",
+      "team": "India",
+      "venue": "Dubai International Cricket Stadium",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "V Kohli",
+        "SS Iyer",
+        "KL Rahul",
+        "HH Pandya",
+        "AR Patel",
+        "RA Jadeja",
+        "Kuldeep Yadav",
+        "Mohammed Shami",
+        "CV Varun"
+      ],
+      "winners": [
+        "V Kohli"
+      ],
+      "training_max_date": "2025-03-02",
+      "brier": {
+        "model": 0.7013189629629629,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.6346763115476539,
+        "venue_blind": 0.720126888888889
+      },
+      "model_q": [
+        0.2152222222222222,
+        0.18255555555555558,
+        0.23355555555555557,
+        0.12288888888888888,
+        0.10566666666666667,
+        0.07288888888888889,
+        0.05022222222222222,
+        0.010333333333333333,
+        0.004666666666666667,
+        0.0,
+        0.002
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1466427",
+      "date": "2025-03-05",
+      "team": "New Zealand",
+      "venue": "Gaddafi Stadium, Lahore",
+      "lineup": [
+        "WA Young",
+        "KS Williamson",
+        "R Ravindra",
+        "DJ Mitchell",
+        "TWM Latham",
+        "GD Phillips",
+        "MG Bracewell",
+        "MJ Santner",
+        "MJ Henry",
+        "KA Jamieson",
+        "W O'Rourke"
+      ],
+      "winners": [
+        "R Ravindra"
+      ],
+      "training_max_date": "2025-03-04",
+      "brier": {
+        "model": 0.7492994074074074,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.0338374337299356,
+        "venue_blind": 0.8218211111111112
+      },
+      "model_q": [
+        0.18366666666666667,
+        0.193,
+        0.20266666666666666,
+        0.1348888888888889,
+        0.10066666666666667,
+        0.08055555555555555,
+        0.08755555555555554,
+        0.007333333333333333,
+        0.004666666666666667,
+        0.001,
+        0.004
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1466428",
+      "date": "2025-03-09",
+      "team": "India",
+      "venue": "Dubai International Cricket Stadium",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "V Kohli",
+        "SS Iyer",
+        "KL Rahul",
+        "HH Pandya",
+        "AR Patel",
+        "RA Jadeja",
+        "Kuldeep Yadav",
+        "Mohammed Shami",
+        "CV Varun"
+      ],
+      "winners": [
+        "RG Sharma"
+      ],
+      "training_max_date": "2025-03-07",
+      "brier": {
+        "model": 0.740798,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.5674219042274596,
+        "venue_blind": 0.7250991111111112
+      },
+      "model_q": [
+        0.217,
+        0.184,
+        0.247,
+        0.11766666666666667,
+        0.10766666666666666,
+        0.06966666666666667,
+        0.050333333333333334,
+        0.004,
+        0.0013333333333333333,
+        0.0013333333333333333,
+        0.0
+      ],
+      "observed_shares": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1466428",
+      "date": "2025-03-09",
+      "team": "New Zealand",
+      "venue": "Dubai International Cricket Stadium",
+      "lineup": [
+        "WA Young",
+        "KS Williamson",
+        "R Ravindra",
+        "DJ Mitchell",
+        "TWM Latham",
+        "GD Phillips",
+        "MG Bracewell",
+        "MJ Santner",
+        "NG Smith",
+        "KA Jamieson",
+        "W O'Rourke"
+      ],
+      "winners": [
+        "DJ Mitchell"
+      ],
+      "training_max_date": "2025-03-07",
+      "brier": {
+        "model": 0.8452599506172839,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.9039825938889413,
+        "venue_blind": 0.8517726666666666
+      },
+      "model_q": [
+        0.169,
+        0.1932222222222222,
+        0.1892222222222222,
+        0.15322222222222223,
+        0.1071111111111111,
+        0.098,
+        0.07288888888888889,
+        0.010666666666666666,
+        0.0,
+        0.004,
+        0.0026666666666666666
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1443554",
+      "date": "2025-03-29",
+      "team": "New Zealand",
+      "venue": "McLean Park, Napier",
+      "lineup": [
+        "WA Young",
+        "DJ Mitchell",
+        "HM Nicholls",
+        "MS Chapman",
+        "MG Bracewell",
+        "NG Smith",
+        "JA Duffy",
+        "MA Abbas",
+        "MJ Hay",
+        "NF Kelly",
+        "W O'Rourke"
+      ],
+      "winners": [
+        "MS Chapman"
+      ],
+      "training_max_date": "2025-03-13",
+      "brier": {
+        "model": 0.9163335555555555,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.0965656565656565,
+        "venue_blind": 0.892344888888889
+      },
+      "model_q": [
+        0.18066666666666667,
+        0.21133333333333335,
+        0.15333333333333332,
+        0.11433333333333333,
+        0.113,
+        0.1,
+        0.089,
+        0.013666666666666667,
+        0.012666666666666666,
+        0.007666666666666666,
+        0.004333333333333333
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1443555",
+      "date": "2025-04-02",
+      "team": "New Zealand",
+      "venue": "Seddon Park, Hamilton",
+      "lineup": [
+        "NF Kelly",
+        "DJ Mitchell",
+        "HM Nicholls",
+        "MA Abbas",
+        "MG Bracewell",
+        "MJ Hay",
+        "NG Smith",
+        "JA Duffy",
+        "BV Sears",
+        "RA Mariu",
+        "W O'Rourke"
+      ],
+      "winners": [
+        "MJ Hay"
+      ],
+      "training_max_date": "2025-03-29",
+      "brier": {
+        "model": 0.9379094074074072,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.3472727272727276,
+        "venue_blind": 0.9592317037037038
+      },
+      "model_q": [
+        0.1688888888888889,
+        0.19022222222222224,
+        0.16066666666666668,
+        0.14166666666666666,
+        0.10833333333333334,
+        0.10233333333333333,
+        0.09766666666666667,
+        0.009,
+        0.009,
+        0.00688888888888889,
+        0.005333333333333333
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1443556",
+      "date": "2025-04-05",
+      "team": "New Zealand",
+      "venue": "Bay Oval, Mount Maunganui",
+      "lineup": [
+        "RA Mariu",
+        "NF Kelly",
+        "DJ Mitchell",
+        "HM Nicholls",
+        "MA Abbas",
+        "TL Seifert",
+        "MG Bracewell",
+        "MJ Hay",
+        "BV Sears",
+        "JA Duffy",
+        "W O'Rourke"
+      ],
+      "winners": [
+        "MG Bracewell"
+      ],
+      "training_max_date": "2025-04-02",
+      "brier": {
+        "model": 0.9268942222222223,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.031539888682746,
+        "venue_blind": 0.9538165925925927
+      },
+      "model_q": [
+        0.165,
+        0.15766666666666668,
+        0.18366666666666667,
+        0.12955555555555556,
+        0.11822222222222223,
+        0.11255555555555556,
+        0.107,
+        0.007,
+        0.01,
+        0.003,
+        0.006333333333333333
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1478905",
+      "date": "2025-10-23",
+      "team": "India",
+      "venue": "Adelaide Oval",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "V Kohli",
+        "SS Iyer",
+        "KL Rahul",
+        "AR Patel",
+        "Washington Sundar",
+        "Harshit Rana",
+        "Arshdeep Singh",
+        "Mohammed Siraj",
+        "Nithish Kumar Reddy"
+      ],
+      "winners": [
+        "RG Sharma"
+      ],
+      "training_max_date": "2025-10-21",
+      "brier": {
+        "model": 0.7253326666666666,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.5414176365733459,
+        "venue_blind": 0.741850888888889
+      },
+      "model_q": [
+        0.22733333333333333,
+        0.198,
+        0.248,
+        0.11033333333333334,
+        0.104,
+        0.05366666666666667,
+        0.04066666666666666,
+        0.004,
+        0.005333333333333333,
+        0.0026666666666666666,
+        0.006
+      ],
+      "observed_shares": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1478906",
+      "date": "2025-10-25",
+      "team": "India",
+      "venue": "Sydney Cricket Ground",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "V Kohli",
+        "SS Iyer",
+        "KL Rahul",
+        "AR Patel",
+        "Washington Sundar",
+        "Harshit Rana",
+        "Kuldeep Yadav",
+        "Mohammed Siraj",
+        "M Prasidh Krishna"
+      ],
+      "winners": [
+        "RG Sharma"
+      ],
+      "training_max_date": "2025-10-23",
+      "brier": {
+        "model": 0.7515179259259258,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.5309557065613245,
+        "venue_blind": 0.7190502222222221
+      },
+      "model_q": [
+        0.20933333333333334,
+        0.19622222222222224,
+        0.23488888888888892,
+        0.12733333333333333,
+        0.09133333333333334,
+        0.06355555555555556,
+        0.06333333333333334,
+        0.008,
+        0.0033333333333333335,
+        0.0,
+        0.0026666666666666666
+      ],
+      "observed_shares": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1491720",
+      "date": "2025-10-26",
+      "team": "New Zealand",
+      "venue": "Bay Oval, Mount Maunganui",
+      "lineup": [
+        "WA Young",
+        "KS Williamson",
+        "R Ravindra",
+        "DJ Mitchell",
+        "TWM Latham",
+        "MG Bracewell",
+        "MJ Santner",
+        "MJ Henry",
+        "NG Smith",
+        "JA Duffy",
+        "ZGF Foulkes"
+      ],
+      "winners": [
+        "DJ Mitchell"
+      ],
+      "training_max_date": "2025-10-25",
+      "brier": {
+        "model": 0.8184144444444443,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.8712571613879582,
+        "venue_blind": 0.8173286666666667
+      },
+      "model_q": [
+        0.15066666666666667,
+        0.191,
+        0.17766666666666667,
+        0.16433333333333333,
+        0.11466666666666667,
+        0.09033333333333333,
+        0.08866666666666667,
+        0.0036666666666666666,
+        0.009666666666666667,
+        0.0026666666666666666,
+        0.006666666666666667
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1491721",
+      "date": "2025-10-29",
+      "team": "New Zealand",
+      "venue": "Seddon Park, Hamilton",
+      "lineup": [
+        "WA Young",
+        "R Ravindra",
+        "KS Williamson",
+        "DJ Mitchell",
+        "TWM Latham",
+        "MG Bracewell",
+        "MJ Santner",
+        "NG Smith",
+        "JA Duffy",
+        "BM Tickner",
+        "ZGF Foulkes"
+      ],
+      "winners": [
+        "DJ Mitchell"
+      ],
+      "training_max_date": "2025-10-28",
+      "brier": {
+        "model": 0.802005012345679,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.8419733096550104,
+        "venue_blind": 0.8154079259259257
+      },
+      "model_q": [
+        0.17077777777777778,
+        0.1611111111111111,
+        0.1678888888888889,
+        0.171,
+        0.10966666666666666,
+        0.10422222222222222,
+        0.09166666666666666,
+        0.01,
+        0.005333333333333333,
+        0.0036666666666666666,
+        0.004666666666666667
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1491722",
+      "date": "2025-11-01",
+      "team": "New Zealand",
+      "venue": "Sky Stadium, Wellington",
+      "lineup": [
+        "WA Young",
+        "DP Conway",
+        "R Ravindra",
+        "DJ Mitchell",
+        "TWM Latham",
+        "MG Bracewell",
+        "MJ Santner",
+        "NG Smith",
+        "JA Duffy",
+        "BM Tickner",
+        "ZGF Foulkes"
+      ],
+      "winners": [
+        "R Ravindra"
+      ],
+      "training_max_date": "2025-10-30",
+      "brier": {
+        "model": 0.8078762222222224,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.9815106078081853,
+        "venue_blind": 0.8079444444444446
+      },
+      "model_q": [
+        0.16866666666666666,
+        0.187,
+        0.17066666666666666,
+        0.17866666666666667,
+        0.10833333333333334,
+        0.08733333333333333,
+        0.072,
+        0.008,
+        0.008666666666666666,
+        0.005333333333333333,
+        0.005333333333333333
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1491728",
+      "date": "2025-11-16",
+      "team": "New Zealand",
+      "venue": "Hagley Oval, Christchurch",
+      "lineup": [
+        "WA Young",
+        "DP Conway",
+        "R Ravindra",
+        "DJ Mitchell",
+        "TWM Latham",
+        "MG Bracewell",
+        "MJ Santner",
+        "MJ Henry",
+        "ZGF Foulkes",
+        "JA Duffy",
+        "KA Jamieson"
+      ],
+      "winners": [
+        "DJ Mitchell"
+      ],
+      "training_max_date": "2025-11-14",
+      "brier": {
+        "model": 0.8128657777777778,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.7518154922001077,
+        "venue_blind": 0.789874790123457
+      },
+      "model_q": [
+        0.16366666666666665,
+        0.16566666666666666,
+        0.17233333333333334,
+        0.16466666666666666,
+        0.11833333333333333,
+        0.09766666666666667,
+        0.08566666666666667,
+        0.008666666666666666,
+        0.010666666666666666,
+        0.007666666666666666,
+        0.005
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1491729",
+      "date": "2025-11-19",
+      "team": "New Zealand",
+      "venue": "McLean Park, Napier",
+      "lineup": [
+        "WA Young",
+        "DP Conway",
+        "R Ravindra",
+        "MS Chapman",
+        "TWM Latham",
+        "MG Bracewell",
+        "MJ Santner",
+        "NG Smith",
+        "MJ Henry",
+        "KA Jamieson",
+        "BM Tickner"
+      ],
+      "winners": [
+        "DP Conway"
+      ],
+      "training_max_date": "2025-11-16",
+      "brier": {
+        "model": 0.7785333333333332,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.9136927122464312,
+        "venue_blind": 0.7721671111111112
+      },
+      "model_q": [
+        0.15755555555555556,
+        0.18133333333333335,
+        0.1668888888888889,
+        0.14166666666666666,
+        0.122,
+        0.108,
+        0.0938888888888889,
+        0.008333333333333333,
+        0.006666666666666667,
+        0.005666666666666667,
+        0.008
+      ],
+      "observed_shares": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1491730",
+      "date": "2025-11-22",
+      "team": "New Zealand",
+      "venue": "Seddon Park, Hamilton",
+      "lineup": [
+        "DP Conway",
+        "R Ravindra",
+        "WA Young",
+        "MS Chapman",
+        "TWM Latham",
+        "MG Bracewell",
+        "MJ Santner",
+        "ZGF Foulkes",
+        "MJ Henry",
+        "KA Jamieson",
+        "JA Duffy"
+      ],
+      "winners": [
+        "MS Chapman"
+      ],
+      "training_max_date": "2025-11-19",
+      "brier": {
+        "model": 0.8663024444444444,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.0513131313131308,
+        "venue_blind": 0.8904459259259261
+      },
+      "model_q": [
+        0.19566666666666666,
+        0.15966666666666668,
+        0.14633333333333334,
+        0.13633333333333333,
+        0.12433333333333334,
+        0.10355555555555557,
+        0.09233333333333334,
+        0.014555555555555554,
+        0.013,
+        0.007222222222222223,
+        0.007
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1479573",
+      "date": "2025-11-30",
+      "team": "India",
+      "venue": "JSCA International Stadium Complex, Ranchi",
+      "lineup": [
+        "RD Gaikwad",
+        "RG Sharma",
+        "YBK Jaiswal",
+        "V Kohli",
+        "KL Rahul",
+        "RA Jadeja",
+        "Washington Sundar",
+        "Harshit Rana",
+        "Kuldeep Yadav",
+        "Arshdeep Singh",
+        "M Prasidh Krishna"
+      ],
+      "winners": [
+        "V Kohli"
+      ],
+      "training_max_date": "2025-11-22",
+      "brier": {
+        "model": 0.9982464444444444,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.5996250594588545,
+        "venue_blind": 0.9622528888888889
+      },
+      "model_q": [
+        0.18933333333333333,
+        0.25933333333333336,
+        0.18266666666666667,
+        0.08566666666666667,
+        0.12866666666666668,
+        0.07066666666666667,
+        0.064,
+        0.008666666666666666,
+        0.0013333333333333333,
+        0.006333333333333333,
+        0.0033333333333333335
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1479574",
+      "date": "2025-12-03",
+      "team": "India",
+      "venue": "Shaheed Veer Narayan Singh International Stadium, Raipur",
+      "lineup": [
+        "RG Sharma",
+        "YBK Jaiswal",
+        "RD Gaikwad",
+        "V Kohli",
+        "KL Rahul",
+        "RA Jadeja",
+        "Washington Sundar",
+        "Harshit Rana",
+        "Kuldeep Yadav",
+        "Arshdeep Singh",
+        "M Prasidh Krishna"
+      ],
+      "winners": [
+        "RD Gaikwad"
+      ],
+      "training_max_date": "2025-11-30",
+      "brier": {
+        "model": 0.8241126666666665,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.3719682035362477,
+        "venue_blind": 0.8193186666666665
+      },
+      "model_q": [
+        0.2675555555555556,
+        0.16222222222222224,
+        0.171,
+        0.09833333333333333,
+        0.13733333333333334,
+        0.07855555555555556,
+        0.06433333333333334,
+        0.009,
+        0.004666666666666667,
+        0.004666666666666667,
+        0.0023333333333333335
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1479575",
+      "date": "2025-12-06",
+      "team": "India",
+      "venue": "Andhra Cricket Association-Visakhapatnam District Cricket Association Stadium, Visakhapatnam",
+      "lineup": [
+        "RG Sharma",
+        "YBK Jaiswal",
+        "RD Gaikwad",
+        "V Kohli",
+        "Tilak Varma",
+        "KL Rahul",
+        "RA Jadeja",
+        "Harshit Rana",
+        "Kuldeep Yadav",
+        "Arshdeep Singh",
+        "M Prasidh Krishna"
+      ],
+      "winners": [
+        "YBK Jaiswal"
+      ],
+      "training_max_date": "2025-12-03",
+      "brier": {
+        "model": 0.8049137777777778,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.3636452690166974,
+        "venue_blind": 0.8723600000000002
+      },
+      "model_q": [
+        0.2723333333333333,
+        0.18333333333333332,
+        0.18033333333333335,
+        0.08433333333333333,
+        0.08133333333333333,
+        0.11966666666666667,
+        0.05533333333333333,
+        0.010666666666666666,
+        0.005333333333333333,
+        0.002,
+        0.005333333333333333
+      ],
+      "observed_shares": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1490231",
+      "date": "2026-01-11",
+      "team": "India",
+      "venue": "Kotambi Stadium, Vadodara",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "V Kohli",
+        "SS Iyer",
+        "KL Rahul",
+        "RA Jadeja",
+        "Washington Sundar",
+        "Harshit Rana",
+        "Kuldeep Yadav",
+        "Mohammed Siraj",
+        "M Prasidh Krishna"
+      ],
+      "winners": [
+        "V Kohli"
+      ],
+      "training_max_date": "2025-12-06",
+      "brier": {
+        "model": 0.6835424444444445,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.6261023245748497,
+        "venue_blind": 0.674146
+      },
+      "model_q": [
+        0.23166666666666666,
+        0.17566666666666667,
+        0.2462222222222222,
+        0.11933333333333333,
+        0.10655555555555556,
+        0.052333333333333336,
+        0.049,
+        0.006666666666666667,
+        0.005333333333333333,
+        0.0035555555555555553,
+        0.0036666666666666666
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1490231",
+      "date": "2026-01-11",
+      "team": "New Zealand",
+      "venue": "Kotambi Stadium, Vadodara",
+      "lineup": [
+        "DP Conway",
+        "WA Young",
+        "DJ Mitchell",
+        "HM Nicholls",
+        "GD Phillips",
+        "MG Bracewell",
+        "MJ Hay",
+        "ZGF Foulkes",
+        "A Ashok",
+        "KA Jamieson",
+        "KDC Clarke"
+      ],
+      "winners": [
+        "DJ Mitchell"
+      ],
+      "training_max_date": "2025-12-06",
+      "brier": {
+        "model": 0.7711535555555556,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.6478776422065646,
+        "venue_blind": 0.7714446666666668
+      },
+      "model_q": [
+        0.20366666666666666,
+        0.14933333333333335,
+        0.188,
+        0.12133333333333333,
+        0.11133333333333334,
+        0.099,
+        0.10466666666666667,
+        0.009666666666666667,
+        0.0023333333333333335,
+        0.005666666666666667,
+        0.005
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1490232",
+      "date": "2026-01-14",
+      "team": "India",
+      "venue": "Niranjan Shah Stadium, Rajkot",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "V Kohli",
+        "SS Iyer",
+        "KL Rahul",
+        "RA Jadeja",
+        "Nithish Kumar Reddy",
+        "Harshit Rana",
+        "Kuldeep Yadav",
+        "Mohammed Siraj",
+        "M Prasidh Krishna"
+      ],
+      "winners": [
+        "KL Rahul"
+      ],
+      "training_max_date": "2026-01-11",
+      "brier": {
+        "model": 0.9656062222222221,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.0796243669796939,
+        "venue_blind": 0.9638840000000001
+      },
+      "model_q": [
+        0.21733333333333332,
+        0.17333333333333334,
+        0.24766666666666667,
+        0.12133333333333333,
+        0.10266666666666667,
+        0.059,
+        0.058666666666666666,
+        0.01,
+        0.004333333333333333,
+        0.0016666666666666668,
+        0.004
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1490232",
+      "date": "2026-01-14",
+      "team": "New Zealand",
+      "venue": "Niranjan Shah Stadium, Rajkot",
+      "lineup": [
+        "DP Conway",
+        "WA Young",
+        "DJ Mitchell",
+        "HM Nicholls",
+        "GD Phillips",
+        "MG Bracewell",
+        "MJ Hay",
+        "ZGF Foulkes",
+        "KDC Clarke",
+        "KA Jamieson",
+        "JR Lennox"
+      ],
+      "winners": [
+        "DJ Mitchell"
+      ],
+      "training_max_date": "2026-01-11",
+      "brier": {
+        "model": 0.7621977777777776,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.6206016708506521,
+        "venue_blind": 0.7740695555555556
+      },
+      "model_q": [
+        0.202,
+        0.13633333333333333,
+        0.193,
+        0.13333333333333333,
+        0.11766666666666667,
+        0.08566666666666667,
+        0.11166666666666666,
+        0.009,
+        0.005,
+        0.0036666666666666666,
+        0.0026666666666666666
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1490233",
+      "date": "2026-01-18",
+      "team": "India",
+      "venue": "Holkar Cricket Stadium, Indore",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "V Kohli",
+        "SS Iyer",
+        "KL Rahul",
+        "RA Jadeja",
+        "Nithish Kumar Reddy",
+        "Harshit Rana",
+        "Kuldeep Yadav",
+        "Arshdeep Singh",
+        "Mohammed Siraj"
+      ],
+      "winners": [
+        "V Kohli"
+      ],
+      "training_max_date": "2026-01-14",
+      "brier": {
+        "model": 0.6738004444444443,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.6174188528878585,
+        "venue_blind": 0.7058082222222222
+      },
+      "model_q": [
+        0.23066666666666666,
+        0.176,
+        0.25188888888888894,
+        0.111,
+        0.10933333333333334,
+        0.04422222222222222,
+        0.060222222222222226,
+        0.006,
+        0.0036666666666666666,
+        0.006333333333333333,
+        0.0006666666666666666
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1490233",
+      "date": "2026-01-18",
+      "team": "New Zealand",
+      "venue": "Holkar Cricket Stadium, Indore",
+      "lineup": [
+        "DP Conway",
+        "WA Young",
+        "DJ Mitchell",
+        "HM Nicholls",
+        "GD Phillips",
+        "MG Bracewell",
+        "MJ Hay",
+        "ZGF Foulkes",
+        "KDC Clarke",
+        "KA Jamieson",
+        "JR Lennox"
+      ],
+      "winners": [
+        "DJ Mitchell"
+      ],
+      "training_max_date": "2026-01-14",
+      "brier": {
+        "model": 0.7387302222222221,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.5950126262626262,
+        "venue_blind": 0.7793964444444443
+      },
+      "model_q": [
+        0.20533333333333334,
+        0.162,
+        0.20633333333333334,
+        0.10733333333333334,
+        0.106,
+        0.09533333333333334,
+        0.09166666666666666,
+        0.007,
+        0.005666666666666667,
+        0.006666666666666667,
+        0.006666666666666667
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1528272",
+      "date": "2026-04-17",
+      "team": "New Zealand",
+      "venue": "Shere Bangla National Stadium, Mirpur",
+      "lineup": [
+        "NF Kelly",
+        "WA Young",
+        "D Foxcroft",
+        "HM Nicholls",
+        "TWM Latham",
+        "MA Abbas",
+        "JA Clarkson",
+        "NG Smith",
+        "BM Tickner",
+        "JR Lennox",
+        "W O'Rourke"
+      ],
+      "winners": [
+        "HM Nicholls"
+      ],
+      "training_max_date": "2026-04-12",
+      "brier": {
+        "model": 0.8700159999999998,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.8765656565656565,
+        "venue_blind": 0.8564037777777778
+      },
+      "model_q": [
+        0.16433333333333333,
+        0.173,
+        0.16533333333333333,
+        0.133,
+        0.12733333333333333,
+        0.09666666666666666,
+        0.088,
+        0.02,
+        0.012666666666666666,
+        0.009,
+        0.010666666666666666
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1528273",
+      "date": "2026-04-20",
+      "team": "New Zealand",
+      "venue": "Shere Bangla National Stadium, Mirpur",
+      "lineup": [
+        "NF Kelly",
+        "WA Young",
+        "HM Nicholls",
+        "D Foxcroft",
+        "TWM Latham",
+        "MA Abbas",
+        "JA Clarkson",
+        "NG Smith",
+        "JR Lennox",
+        "BM Tickner",
+        "W O'Rourke"
+      ],
+      "winners": [
+        "NF Kelly"
+      ],
+      "training_max_date": "2026-04-17",
+      "brier": {
+        "model": 0.7905004691358025,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.3370542049001983,
+        "venue_blind": 0.8188694814814815
+      },
+      "model_q": [
+        0.17366666666666666,
+        0.17566666666666667,
+        0.16322222222222224,
+        0.13144444444444445,
+        0.13166666666666665,
+        0.09088888888888888,
+        0.08133333333333333,
+        0.013333333333333334,
+        0.014222222222222221,
+        0.013333333333333334,
+        0.011222222222222222
+      ],
+      "observed_shares": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1528274",
+      "date": "2026-04-23",
+      "team": "New Zealand",
+      "venue": "Bir Sreshtho Flight Lieutenant Matiur Rahman Stadium, Chattogram",
+      "lineup": [
+        "NF Kelly",
+        "WA Young",
+        "HM Nicholls",
+        "TWM Latham",
+        "D Foxcroft",
+        "MA Abbas",
+        "JA Clarkson",
+        "NG Smith",
+        "JR Lennox",
+        "BG Lister",
+        "W O'Rourke"
+      ],
+      "winners": [
+        "D Foxcroft"
+      ],
+      "training_max_date": "2026-04-20",
+      "brier": {
+        "model": 0.9139775555555555,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.317294034090909,
+        "venue_blind": 0.9139317777777778
+      },
+      "model_q": [
+        0.17666666666666667,
+        0.17566666666666667,
+        0.159,
+        0.14733333333333334,
+        0.11366666666666667,
+        0.101,
+        0.094,
+        0.009,
+        0.012,
+        0.007,
+        0.004666666666666667
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1538624",
+      "date": "2026-07-11",
+      "team": "New Zealand",
+      "venue": "Providence Stadium, Guyana",
+      "lineup": [
+        "WA Young",
+        "HM Nicholls",
+        "DJ Mitchell",
+        "MS Chapman",
+        "TWM Latham",
+        "MG Bracewell",
+        "MJ Santner",
+        "NG Smith",
+        "JA Duffy",
+        "JR Lennox",
+        "MJ Fisher"
+      ],
+      "winners": [
+        "DJ Mitchell"
+      ],
+      "training_max_date": "2026-07-09",
+      "brier": {
+        "model": 0.7628293333333336,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.6508000927643787,
+        "venue_blind": 0.7655245185185184
+      },
+      "model_q": [
+        0.172,
+        0.14733333333333334,
+        0.19,
+        0.13366666666666666,
+        0.12866666666666668,
+        0.10966666666666666,
+        0.094,
+        0.007,
+        0.006,
+        0.005333333333333333,
+        0.006333333333333333
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1538625",
+      "date": "2026-07-13",
+      "team": "New Zealand",
+      "venue": "Providence Stadium, Guyana",
+      "lineup": [
+        "WA Young",
+        "HM Nicholls",
+        "DJ Mitchell",
+        "MS Chapman",
+        "TWM Latham",
+        "D Foxcroft",
+        "MG Bracewell",
+        "MJ Santner",
+        "JA Duffy",
+        "JR Lennox",
+        "MJ Fisher"
+      ],
+      "winners": [
+        "TWM Latham"
+      ],
+      "training_max_date": "2026-07-11",
+      "brier": {
+        "model": 0.907518148148148,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.700626959247649,
+        "venue_blind": 0.9075708888888889
+      },
+      "model_q": [
+        0.167,
+        0.13966666666666666,
+        0.18666666666666668,
+        0.14655555555555555,
+        0.11566666666666667,
+        0.11355555555555556,
+        0.092,
+        0.012333333333333333,
+        0.01,
+        0.006555555555555556,
+        0.01
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1496579",
+      "date": "2026-07-14",
+      "team": "India",
+      "venue": "Edgbaston",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "V Kohli",
+        "SS Iyer",
+        "KL Rahul",
+        "AR Patel",
+        "Washington Sundar",
+        "S Dube",
+        "JJ Bumrah",
+        "Gurnoor Brar",
+        "M Prasidh Krishna"
+      ],
+      "winners": [
+        "Shubman Gill"
+      ],
+      "training_max_date": "2026-07-13",
+      "brier": {
+        "model": 0.8273677777777779,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.0299133308392565,
+        "venue_blind": 0.8466744444444445
+      },
+      "model_q": [
+        0.211,
+        0.172,
+        0.252,
+        0.116,
+        0.11266666666666666,
+        0.06833333333333333,
+        0.05333333333333334,
+        0.008666666666666666,
+        0.004,
+        0.0,
+        0.002
+      ],
+      "observed_shares": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1496580",
+      "date": "2026-07-16",
+      "team": "India",
+      "venue": "Sophia Gardens, Cardiff",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "Ishan Kishan",
+        "V Kohli",
+        "SS Iyer",
+        "AR Patel",
+        "Washington Sundar",
+        "S Dube",
+        "JJ Bumrah",
+        "Gurnoor Brar",
+        "M Prasidh Krishna"
+      ],
+      "winners": [
+        "SS Iyer"
+      ],
+      "training_max_date": "2026-07-14",
+      "brier": {
+        "model": 0.9128957037037037,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.1625241732094003,
+        "venue_blind": 0.8781053333333333
+      },
+      "model_q": [
+        0.24055555555555555,
+        0.20355555555555557,
+        0.16955555555555557,
+        0.08833333333333333,
+        0.12566666666666668,
+        0.08733333333333333,
+        0.06966666666666667,
+        0.009333333333333334,
+        0.0033333333333333335,
+        0.0006666666666666666,
+        0.002
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1538626",
+      "date": "2026-07-16",
+      "team": "New Zealand",
+      "venue": "Providence Stadium, Guyana",
+      "lineup": [
+        "WA Young",
+        "HM Nicholls",
+        "DJ Mitchell",
+        "MS Chapman",
+        "TWM Latham",
+        "D Foxcroft",
+        "MG Bracewell",
+        "MJ Santner",
+        "NG Smith",
+        "JA Duffy",
+        "JR Lennox"
+      ],
+      "winners": [
+        "TWM Latham"
+      ],
+      "training_max_date": "2026-07-14",
+      "brier": {
+        "model": 0.8891917037037038,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.6770781645817555,
+        "venue_blind": 0.8994795555555556
+      },
+      "model_q": [
+        0.16155555555555556,
+        0.143,
+        0.17388888888888893,
+        0.15522222222222223,
+        0.12433333333333334,
+        0.11166666666666666,
+        0.093,
+        0.015333333333333332,
+        0.008,
+        0.005666666666666667,
+        0.008333333333333333
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1496581",
+      "date": "2026-07-19",
+      "team": "India",
+      "venue": "Lord's",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "Ishan Kishan",
+        "V Kohli",
+        "SS Iyer",
+        "KL Rahul",
+        "AR Patel",
+        "Gurnoor Brar",
+        "Arshdeep Singh",
+        "M Prasidh Krishna",
+        "Prince Yadav"
+      ],
+      "winners": [
+        "RG Sharma"
+      ],
+      "training_max_date": "2026-07-16",
+      "brier": {
+        "model": 0.7003014320987654,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.5609608497853469,
+        "venue_blind": 0.6990517777777777
+      },
+      "model_q": [
+        0.22855555555555557,
+        0.18522222222222226,
+        0.15622222222222223,
+        0.09422222222222221,
+        0.13644444444444445,
+        0.124,
+        0.059333333333333335,
+        0.005333333333333333,
+        0.005,
+        0.0036666666666666666,
+        0.002
+      ],
+      "observed_shares": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1538627",
+      "date": "2026-07-19",
+      "team": "New Zealand",
+      "venue": "Kensington Oval",
+      "lineup": [
+        "NF Kelly",
+        "WA Young",
+        "HM Nicholls",
+        "MS Chapman",
+        "TWM Latham",
+        "MG Bracewell",
+        "MJ Santner",
+        "NG Smith",
+        "JA Duffy",
+        "JR Lennox",
+        "MJ Fisher"
+      ],
+      "winners": [
+        "MS Chapman"
+      ],
+      "training_max_date": "2026-07-16",
+      "brier": {
+        "model": 0.8782760000000001,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.0355935386927122,
+        "venue_blind": 0.8210234074074074
+      },
+      "model_q": [
+        0.21166666666666667,
+        0.163,
+        0.17566666666666667,
+        0.135,
+        0.116,
+        0.09033333333333333,
+        0.077,
+        0.010666666666666666,
+        0.008333333333333333,
+        0.009,
+        0.0033333333333333335
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1538628",
+      "date": "2026-07-21",
+      "team": "New Zealand",
+      "venue": "Kensington Oval",
+      "lineup": [
+        "NF Kelly",
+        "WA Young",
+        "HM Nicholls",
+        "MS Chapman",
+        "TWM Latham",
+        "MG Bracewell",
+        "MJ Santner",
+        "NG Smith",
+        "KDC Clarke",
+        "JA Duffy",
+        "JR Lennox"
+      ],
+      "winners": [
+        "TWM Latham"
+      ],
+      "training_max_date": "2026-07-19",
+      "brier": {
+        "model": 0.9100266666666668,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.501189674523008,
+        "venue_blind": 0.9186153333333335
+      },
+      "model_q": [
+        0.19066666666666668,
+        0.16066666666666668,
+        0.15933333333333333,
+        0.15833333333333333,
+        0.11633333333333333,
+        0.099,
+        0.08,
+        0.010666666666666666,
+        0.011,
+        0.008,
+        0.006
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1529227",
+      "date": "2026-09-27",
+      "team": "India",
+      "venue": "Greenfield International Stadium, Thiruvananthapuram",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "RD Gaikwad",
+        "V Kohli",
+        "KL Rahul",
+        "Nithish Kumar Reddy",
+        "RA Jadeja",
+        "Gurnoor Brar",
+        "Kuldeep Yadav",
+        "M Prasidh Krishna",
+        "Naman Dhir"
+      ],
+      "winners": [
+        "V Kohli"
+      ],
+      "training_max_date": "2026-09-24",
+      "brier": {
+        "model": 0.9962073333333333,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 0.606851516444742,
+        "venue_blind": 0.9806733333333333
+      },
+      "model_q": [
+        0.24866666666666667,
+        0.20566666666666666,
+        0.17266666666666666,
+        0.08533333333333333,
+        0.12066666666666667,
+        0.08933333333333333,
+        0.054,
+        0.011666666666666667,
+        0.0026666666666666666,
+        0.004,
+        0.005333333333333333
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1529228",
+      "date": "2026-09-30",
+      "team": "India",
+      "venue": "Barsapara Cricket Stadium, Guwahati",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "RD Gaikwad",
+        "V Kohli",
+        "KL Rahul",
+        "RA Jadeja",
+        "Gurnoor Brar",
+        "Kuldeep Yadav",
+        "Auqib Nabi",
+        "M Prasidh Krishna",
+        "Naman Dhir"
+      ],
+      "winners": [
+        "Shubman Gill"
+      ],
+      "training_max_date": "2026-09-27",
+      "brier": {
+        "model": 0.7384077777777779,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.0274336300918328,
+        "venue_blind": 0.7356211111111112
+      },
+      "model_q": [
+        0.247,
+        0.21433333333333332,
+        0.16466666666666666,
+        0.089,
+        0.119,
+        0.07166666666666667,
+        0.07533333333333334,
+        0.008333333333333333,
+        0.006,
+        0.0013333333333333333,
+        0.0033333333333333335
+      ],
+      "observed_shares": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "id": "1529229",
+      "date": "2026-10-03",
+      "team": "India",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, New Chandigarh",
+      "lineup": [
+        "RG Sharma",
+        "Shubman Gill",
+        "RD Gaikwad",
+        "V Kohli",
+        "KL Rahul",
+        "Nithish Kumar Reddy",
+        "Gurnoor Brar",
+        "Kuldeep Yadav",
+        "Mohammed Siraj",
+        "A Kamboj",
+        "Naman Dhir"
+      ],
+      "winners": [
+        "KL Rahul"
+      ],
+      "training_max_date": "2026-09-30",
+      "brier": {
+        "model": 0.9241068888888889,
+        "uniform": 0.9090909090909088,
+        "historical_top_share": 1.0912389198103483,
+        "venue_blind": 0.8911268888888888
+      },
+      "model_q": [
+        0.26166666666666666,
+        0.20333333333333334,
+        0.14966666666666667,
+        0.08233333333333333,
+        0.12166666666666667,
+        0.092,
+        0.07133333333333333,
+        0.004333333333333333,
+        0.002,
+        0.005,
+        0.006666666666666667
+      ],
+      "observed_shares": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "source_audit": {
+    "team_rows": 2366,
+    "eligible_team_rows": 2096,
+    "eligible_unique_matches": 1048,
+    "all_unique_matches": 1183,
+    "latest_date": "2026-11-02",
+    "eligible_team_rows_by_team": {
+      "New Zealand": 143,
+      "Sri Lanka": 146,
+      "Australia": 150,
+      "India": 169,
+      "Pakistan": 127,
+      "England": 147,
+      "South Africa": 134,
+      "West Indies": 135,
+      "Zimbabwe": 83,
+      "Ireland": 69,
+      "Scotland": 83,
+      "United Arab Emirates": 104,
+      "Hong Kong": 11,
+      "Bangladesh": 123,
+      "Papua New Guinea": 53,
+      "Nepal": 87,
+      "United States of America": 78,
+      "Namibia": 74,
+      "Oman": 73,
+      "Netherlands": 69,
+      "Canada": 34,
+      "Jersey": 4
+    },
+    "data_sha256": "eb99fa854ba632e2481a4d61ad453f3aeec81887e54b470f6c131c6eeed51ae6",
+    "eligibility": "exclude no-results, absent team innings, D/L and DLS; strict dates enforced again by forecast"
+  },
+  "worked_conditional_query": {
+    "definition": "P(KL Rahul >=50 | both opening players bat and each scores <20)",
+    "seed": 7,
+    "draws": 10000,
+    "condition_n": 1934,
+    "joint_event_n": 459,
+    "conditional_probability": 0.23733195449844882,
+    "scenario_weights": {
+      "Early trouble": 0.377326741714038,
+      "Settled start": 0.622673258285962
+    },
+    "training_max_date": "2026-11-02",
+    "q_sum": 1.0,
+    "player_identity_audit": [
+      {
+        "player": "Rohit Sharma",
+        "canonical_name": "RG Sharma",
+        "player_id": "740742ef",
+        "position": 1,
+        "history_n": 128,
+        "weighted_n": 53.84655299651808,
+        "p_bat": 1.0
+      },
+      {
+        "player": "Shubman Gill",
+        "canonical_name": "Shubman Gill",
+        "player_id": "b4b99816",
+        "position": 2,
+        "history_n": 60,
+        "weighted_n": 37.88453491302951,
+        "p_bat": 1.0
+      },
+      {
+        "player": "Virat Kohli",
+        "canonical_name": "V Kohli",
+        "player_id": "ba607b88",
+        "position": 3,
+        "history_n": 132,
+        "weighted_n": 55.29420492702847,
+        "p_bat": 0.9846
+      },
+      {
+        "player": "Shreyas Iyer",
+        "canonical_name": "SS Iyer",
+        "player_id": "85ec8e33",
+        "position": 4,
+        "history_n": 55,
+        "weighted_n": 30.946897993457945,
+        "p_bat": 0.9539
+      },
+      {
+        "player": "KL Rahul",
+        "canonical_name": "KL Rahul",
+        "player_id": "b17e2f24",
+        "position": 5,
+        "history_n": 61,
+        "weighted_n": 34.55198958789307,
+        "p_bat": 0.8896
+      },
+      {
+        "player": "Naman Dhir",
+        "canonical_name": "Naman Dhir",
+        "player_id": "fffa744b",
+        "position": 6,
+        "history_n": 1,
+        "weighted_n": 0.98213307184763,
+        "p_bat": 0.8336
+      },
+      {
+        "player": "Axar Patel",
+        "canonical_name": "AR Patel",
+        "player_id": "2e171977",
+        "position": 7,
+        "history_n": 31,
+        "weighted_n": 18.947382096194595,
+        "p_bat": 0.7601
+      },
+      {
+        "player": "Anshul Kamboj",
+        "canonical_name": "Anshul Kamboj",
+        "player_id": "Anshul Kamboj",
+        "position": 8,
+        "history_n": 0,
+        "weighted_n": 0.0,
+        "p_bat": 0.6474
+      },
+      {
+        "player": "Auqib Nabi",
+        "canonical_name": "Auqib Nabi",
+        "player_id": "7c3c0337",
+        "position": 9,
+        "history_n": 0,
+        "weighted_n": 0.0,
+        "p_bat": 0.5412
+      },
+      {
+        "player": "Gurnoor Brar",
+        "canonical_name": "Gurnoor Brar",
+        "player_id": "99258814",
+        "position": 10,
+        "history_n": 3,
+        "weighted_n": 2.8754880524458497,
+        "p_bat": 0.4528
+      },
+      {
+        "player": "Arshdeep Singh",
+        "canonical_name": "Arshdeep Singh",
+        "player_id": "244048f6",
+        "position": 11,
+        "history_n": 9,
+        "weighted_n": 6.800215714678037,
+        "p_bat": 0.3447
+      }
+    ]
+  }
+}

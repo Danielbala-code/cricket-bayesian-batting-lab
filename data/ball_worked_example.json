@@ -1,0 +1,29 @@
+{
+  "model": "v3",
+  "assumptions": {
+    "overs": 50,
+    "batting_first": "Unknown50:50",
+    "half_life_years": 2,
+    "prior_strength_deliveries": 240,
+    "seed": 7
+  },
+  "simulations": 10000,
+  "condition": "Rohit and Gill both bat and each scores <=20",
+  "condition_n": 1846,
+  "joint_Rahul50_n": 521,
+  "conditional_P50": 0.2822318526543879,
+  "Rahul_P50": 0.216,
+  "Rahul_q": 0.13248333333333331,
+  "Rahul_mean_balls_if_bats": 35.12616056799563,
+  "resource_checks": {
+    "India": {
+      "budget_violations": 0,
+      "faced_mismatches": 0
+    },
+    "New Zealand": {
+      "budget_violations": 0,
+      "faced_mismatches": 0
+    }
+  },
+  "warning": "Model-conditional scenario, uncalibrated; not a current rain-adjusted betting probability"
+}

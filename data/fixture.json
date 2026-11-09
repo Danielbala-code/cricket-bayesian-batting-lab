@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-10",
+  "start_time_utc": "02:00",
+  "venue": "Seddon Park, Hamilton",
+  "country": "New Zealand",
+  "format": "ODI",
+  "source": "https://betting.betfair.com/cricket/india-cricket/new-zealand-v-india-third-odi-tips-back-gill-at-11-4-in-rainy-hamilton-091126-194.html",
+  "source_author": "Ed Hawkins",
+  "source_published": "2026-11-09 11:00 (timezone not stated on page)",
+  "source_updated": "2026-11-09 11:02 (timezone not stated on page)",
+  "lineup_status": "Possible XIs from a preview; not confirmed teams or confirmed batting orders",
+  "lineups": {
+    "India": [
+      "Rohit Sharma",
+      "Shubman Gill",
+      "Virat Kohli",
+      "Shreyas Iyer",
+      "KL Rahul",
+      "Naman Dhir",
+      "Axar Patel",
+      "Anshul Kamboj",
+      "Auqib Nabi",
+      "Gurnoor Brar",
+      "Arshdeep Singh"
+    ],
+    "New Zealand": [
+      "Tim Seifert",
+      "Will Young",
+      "Henry Nicholls",
+      "Daryl Mitchell",
+      "Tom Latham",
+      "Michael Bracewell",
+      "Mitchell Santner",
+      "Nathan Smith",
+      "Kyle Jamieson",
+      "Matthew Fisher",
+      "Jacob Duffy"
+    ]
+  },
+  "notes": [
+    "The listed order follows the preview's possible XIs and is a forecast scenario only. Confirm teams and batting order assumptions before match forecasts.",
+    "The preview reports a greater than 70 percent rain chance during playing hours and warns of a washout or reduced overs. This is the article's forecast at publication, not a live weather feed.",
+    "The article states a 40-over requirement for the discussed India team-runs market at line 278.5, and a separate 25-over requirement for top-batter bets. These are article statements about different markets; verify the chosen bookmaker's current settlement rules.",
+    "The preview quotes Shubman Gill at 11/4 for top India batter, and discusses Nathan Smith at 35/1 and Kyle Jamieson at 50/1 for top New Zealand batter. Publication quotes are not live executable prices.",
+    "The preview mentions concussion absences for Blair Tickner and Matt Henry and the possible inclusion of Matthew Fisher and Michael Bracewell. These are preview assessments, not official team confirmation.",
+    "The article's historical hit rates and suggestions about whose turn it is are editorial claims and are not model probabilities or validation evidence.",
+    "Player names require matching to Cricsheet identities; Auqib Nabi may appear under AN Dar. Do not silently treat unmatched names as established players."
+  ]
+}

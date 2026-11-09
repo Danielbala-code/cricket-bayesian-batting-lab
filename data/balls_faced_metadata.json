@@ -1,0 +1,70 @@
+{
+  "title": "Deliveries faced (excluding wides; no-balls included)",
+  "definition": "Count each delivery recorded with the player as striker unless extras.wides>0. No-balls are included. This is an explicitly defined historical count, not a claim about an official scorecard balls-faced convention.",
+  "eligibility": "Men ODI, match start >=2016-01-01, no-result matches excluded, observed ordinary innings only, D/L retained.",
+  "dnb": "Rostered players never observed as batter/non-striker/dismissed are excluded. Observed non-strikers who never face a qualifying delivery remain zero, not DNB.",
+  "position": "Order of first batter/non-striker appearance, with dismissed-player fallback. Opening pair combined because first striker/non-striker does not establish certified batting order. Position12 retained separately for concussion-substitute innings.",
+  "comparisons": "Disjoint NZ venues versus Outside NZ; all teams. NZ membership uses existing audited exact-venue crosswalk. Outside NZ is the complement.",
+  "chart": "Boxes 25th to75th percentiles; median centre; whiskers5th to95th percentiles; outliers hidden. n is observed individual batting innings. Middle/lower aggregates are extra CSV rows.",
+  "quantiles": "NumPy default linear interpolation, index(n-1)*p.",
+  "interpretation": "Exploratory historical opportunity distribution; innings within matches are dependent; team, era, chase, rain, selection and ability confound comparisons. No model fit or predictive claim.",
+  "raw_source": "D:\\odis_male_json",
+  "source_documentation": "https://cricsheet.org/format/json/#delivery-data",
+  "start_date": "2016-01-05",
+  "end_date": "2026-11-02",
+  "scope_counts": {
+    "Outside NZ": {
+      "team_innings": 2150,
+      "observed_batters": 19583,
+      "deliveries_excluding_wides": 569641,
+      "wide_deliveries": 13183,
+      "dnb_excluded": 4080,
+      "dl_team_innings": 176,
+      "matches": 1075
+    },
+    "NZ venues": {
+      "team_innings": 134,
+      "observed_batters": 1227,
+      "deliveries_excluding_wides": 34325,
+      "wide_deliveries": 968,
+      "dnb_excluded": 249,
+      "dl_team_innings": 12,
+      "matches": 67
+    }
+  },
+  "exceptions": [
+    {
+      "match": "1277085",
+      "team": "Ireland",
+      "participants": 12
+    },
+    {
+      "match": "1443555",
+      "team": "Pakistan",
+      "participants": 12
+    },
+    {
+      "match": "1443556",
+      "team": "Pakistan",
+      "participants": 12
+    }
+  ],
+  "ground_city_crosswalk": {
+    "Basin Reserve, Wellington": "Wellington",
+    "Bay Oval, Mount Maunganui": "Mount Maunganui",
+    "Cobham Oval (New), Whangarei": "Whangarei",
+    "Eden Park, Auckland": "Auckland",
+    "Hagley Oval, Christchurch": "Christchurch",
+    "McLean Park, Napier": "Napier",
+    "Saxton Oval, Nelson": "Nelson",
+    "Seddon Park, Hamilton": "Hamilton",
+    "Sky Stadium, Wellington": "Wellington",
+    "University Oval, Dunedin": "Dunedin",
+    "Westpac Stadium, Wellington": "Wellington"
+  },
+  "checks": {
+    "every_innings_striker_count_equals_recorded_deliveries_minus_wide_deliveries": true,
+    "dnb_not_inserted_as_zero": true,
+    "non_striker_zero_retained": true
+  }
+}
