@@ -8,6 +8,8 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+from market_view import render_captured_prices, render_participation, render_opportunity_diagnostic, render_historical_depth
+
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 HISTORY = DATA / "history"
@@ -85,10 +87,10 @@ with st.sidebar:
 
 st.markdown('<div class="eyebrow">ODI · Batting intelligence</div>', unsafe_allow_html=True)
 st.title("Cricket, through the batting order")
-st.markdown('<div class="hero">Explore where ODI runs come from, test a probable XI, and translate simulated top-batter shares into transparent price comparisons.</div>', unsafe_allow_html=True)
+st.markdown('<div class="hero">Explore where ODI runs come from, test a probable XI, and inspect independently captured historical batting markets.</div>', unsafe_allow_html=True)
 st.warning("Probable lineups only — the XI and batting order are not confirmed. Update these inputs before interpreting a forecast.")
-st.caption(f"Fixture: {fixture.get('date', '10 November 2026')} · {venue} · India v New Zealand")
-tab_history, tab_forecast, tab_validation, tab_odds, tab_math, tab_guide = st.tabs(["History", "Forecast & scenarios", "Validation", "Odds & EV", "Maths", "Guide & glossary"])
+st.caption(f"Forecast fixture: {fixture.get('date', '10 November 2026')} · {venue} · India v New Zealand. Captured-price selections are separate.")
+tab_history, tab_forecast, tab_validation, tab_odds, tab_math, tab_guide = st.tabs(["History", "Forecast & scenarios", "Validation", "Captured prices", "Maths", "Guide & glossary"])
 
 with tab_math:
     st.subheader("Maths you can inspect and change")
@@ -173,6 +175,7 @@ if result and current_inputs != st.session_state.get("forecast_inputs"):
 
 
 with tab_history:
+    render_historical_depth(DATA)
     st.subheader("The shape of an ODI innings")
     st.write("Observed frequencies describe this archive. They are not forecast odds for the next match.")
     counts = history_csv("scope_counts.csv")
@@ -258,6 +261,7 @@ with tab_forecast:
         if shown_v3:
             renamed = renamed.rename(columns={"Recency-weighted innings": "Recency-weighted deliveries", "mean_balls": "Mean deliveries faced | bats", "median_balls": "Median deliveries faced | bats"})
         st.dataframe(renamed.round(4), hide_index=True, width="stretch")
+        render_participation(scores)
         st.download_button("Download forecast table", players.to_csv(index=False), "odi_forecast.csv", "text/csv")
         if not shown_v3:
             st.markdown("**Scenario mixture**")
@@ -350,6 +354,7 @@ with tab_forecast:
 
 with tab_validation:
     st.subheader("Evidence before confidence")
+    render_opportunity_diagnostic(DATA / "opportunity_diagnostic.json")
     st.caption("The parameter search, score diagnostics and sensitivity tables labelled v2 assess the score sampler. They do not validate the experimental v3 delivery model.")
     validation_v3 = read_json(DATA / "ball_validation.json") or read_json(DATA / "validation_v3.json")
     if validation_v3:
@@ -437,33 +442,7 @@ with tab_validation:
 The archive can omit recent fixtures. In particular, India's observed history ends 3 October 2026. Player identities and a changed batting role can produce sparse samples. Shrinkage stabilises estimates but does not create new evidence. Scenario selection, toss, weather, opposition strength and actual playing XI remain sources of uncertainty.""")
 
 with tab_odds:
-    st.subheader("A price comparison, with settlement visible")
-    st.write("Enter decimal prices for the same top-team-batter market. Expected net return per unit stake is decimal odds × q − 1 under standard dead-heat stake reduction, before commission. Check the bookmaker's actual settlement and void rules.")
-    if result is None:
-        st.info("Run a forecast to compare model shares with quoted prices.")
-    else:
-        players = pd.DataFrame(result["players"])
-        odds = pd.DataFrame({"Player": players.player, "Decimal odds": [8.0 if "rahul" in name.lower() else np.nan for name in players.player]})
-        st.caption("Rahul 8.0 is a user-supplied Oddschecker quote, not a live verified price. All other prices start blank.")
-        quote_source = st.text_input("Bookmaker / quote source and timestamp", placeholder="Bookmaker, market and time checked")
-        entered = st.data_editor(odds, hide_index=True, disabled=["Player"], column_config={"Decimal odds": st.column_config.NumberColumn(min_value=1.01, step=.1, format="%.2f")}, key="odds_editor", width="stretch")
-        prices = pd.to_numeric(entered["Decimal odds"], errors="coerce")
-        implied = 1 / prices
-        dnb_policy = st.selectbox("DNB settlement assumption · verify with the bookmaker", ["DNB loses the stake", "DNB returns the stake"])
-        refund_dnb = dnb_policy == "DNB returns the stake"
-        stake_at_risk = players.p_bat.to_numpy() if refund_dnb else np.ones(len(players))
-        comparison = pd.DataFrame({"Player": players.player, "Decimal odds": prices, "Model q": players.q, "Break-even q": stake_at_risk / prices.to_numpy(), "Model EV / unit": prices.to_numpy() * players.q.to_numpy() - stake_at_risk})
-        st.dataframe(comparison.round(4), hide_index=True, width="stretch")
-        st.caption("DNB loses: EV=dq−1. DNB stake returned: EV=dq−P(bats), with break-even q=P(bats)/d. Other void or reduced-overs rules are not modelled.")
-        same_book = st.checkbox("I confirm all 11 prices are a complete, mutually exclusive market from the same bookmaker", value=False)
-        if same_book and not refund_dnb and prices.notna().all() and len(prices) == 11 and (prices > 1).all():
-            overround = implied.sum() - 1
-            st.metric("Quoted overround", f"{overround:.1%}")
-            st.caption("Proportional de-vig is a heuristic: divide each implied probability by their sum. This is not a recovered true probability.")
-            st.dataframe(pd.DataFrame({"Player": players.player, "Proportional de-vig share": implied / implied.sum()}), hide_index=True)
-        else:
-            st.info("Market margin: N/A. Requires a complete same-book XI field with common stake-standing rules; DNB-refund prices need a different treatment.")
-        st.caption("A positive model EV is an assumption-sensitive estimate, not an established betting edge. It does not account for commission, alternative tie rules, voids or model error.")
+    render_captured_prices(DATA / "captured_betfair.json")
 
 st.caption("ODI batting intelligence · Historical evidence, explicit assumptions, transparent arithmetic")
 
@@ -474,7 +453,7 @@ with tab_guide:
 2. **Check the inputs.** Edit the probable XI and expected order. For the delivery model, check both teams, who bats first and the declared overs limit.
 3. **Explore assumptions in Maths.** Half-life changes how quickly old evidence fades; prior strength changes pooling. These controls are scenarios, not a way to select favourable odds.
 4. **Select Run forecast.** Inspect score distributions, batting opportunity and conditional scenarios. A conditional result applies only to the stated event.
-5. **Read Validation, then Odds & EV.** Compare models on the same cases. Enter fresh prices, identify the bookmaker and check DNB, tie and void rules.""")
+5. **Read Validation and Captured prices.** Compare models on matched cases, then browse the archived Betfair match/team markets independently. Capture timestamps, offer sizes and quote status describe recorded evidence, not a live price or an automatic forecast backtest.""")
     st.subheader("Small glossary")
     glossary = [
         ("Balls faced", "Non-wide deliveries faced, including no-balls in this app. A nonstriker can participate without facing a ball."),
@@ -489,7 +468,8 @@ with tab_guide:
         ("Decimal odds", "Total return including stake per unit staked. Fractional 7/1 means decimal 8.0."),
         ("Break-even share", "The share needed for zero expected profit. With DNB losing, it is 1 / decimal odds."),
         ("Expected value / EV", "Average net return under the model and settlement assumptions. DNB loses: odds × q − 1; DNB refund: odds × q − P(bats)."),
-        ("Vig / overround", "The amount implied probabilities sum above 100%. Requires a complete comparable field from one bookmaker."),
+        ("Captured offer", "A back/lay field received by the collector. Its status, size, time and delayed-feed provenance matter; it is not a live execution guarantee."),
+        ("Last traded price / LTP", "The last recorded trade field, kept separate from back/lay offers. It is not substituted when an offer is missing."),
         ("Brier score", "Squared error of probability forecasts against outcomes. Lower is better; it is not a profit or accuracy percentage."),
         ("Predictive interval", "A range for a future score under the model. It differs from uncertainty about a player's average ability."),
         ("Simulation noise", "Numerical variation from using a finite number of simulated innings. More draws reduce this, not model bias."),
@@ -507,7 +487,7 @@ with tab_guide:
 
     with st.expander("Sources, definitions & limitations"):
         st.markdown("""- [Cricsheet](https://cricsheet.org/) — ball-by-ball ODI archive; historical tables bundled with this app.
-    - [Oddschecker](https://www.oddschecker.com/cricket) — market reference; prices in this app are manually entered.
+    - [Betfair Exchange](https://www.betfair.com/exchange/plus/cricket) — historical top-team-batter captures from the existing delayed-key collector. Event/market/selection identities, recorded offers, sizes and observation times are bundled in a sanitized artifact; this view has no live connection or forecast association.
     - [Betfair: dead-heat rules](https://support.betfair.com/app/answers/detail/a_id/6093/) — check the applicable operator's settlement terms.
     - [PriorsLab](https://www.priorslab.com/) — expected-value background; arithmetic here is shown explicitly.
 
