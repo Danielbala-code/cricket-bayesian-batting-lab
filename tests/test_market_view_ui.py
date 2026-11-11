@@ -5,7 +5,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-TEST_CACHE = Path(__file__).resolve().parents[3] / "work" / "ui_test_cache"
+TEST_CACHE = Path(__file__).resolve().parents[1] / "work" / "ui_test_cache"
 TEST_CACHE.mkdir(parents=True, exist_ok=True)
 os.environ["MPLCONFIGDIR"] = str(TEST_CACHE)
 os.environ["TEMP"] = str(TEST_CACHE)
